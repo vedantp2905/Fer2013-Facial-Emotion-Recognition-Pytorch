@@ -61,7 +61,7 @@ def prepare_data(data):
     return image_array, image_label
 
 
-def get_dataloaders(path='datasets/fer2013/fer2013.csv', bs=64, augment=True):
+def get_dataloaders(path='/kaggle/input/fer2013', bs=64, augment=True):
     """ Prepare train, val, & test dataloaders
         Augment training data using:
             - cropping
